@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Ranjan | Developer & Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar to match the minimalist theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-zinc-300 font-sans selection:bg-white selection:text-black overflow-x-hidden">
+
+    <header id="main-header" class="fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+            <div class="flex items-center space-x-2 z-50 relative">
+                <a href="#" class="font-mono font-bold text-white tracking-widest uppercase">HR // HARSHIT RANJAN</a>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-8 font-mono text-xs uppercase tracking-widest">
+                <a href="#intent" class="hover:text-white transition-colors">About</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Projects</a>
+                <a href="#expertise" class="hover:text-white transition-colors">Expertise</a>
+                <a href="#telemetry" class="hover:text-white transition-colors">Telemetry</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="text-zinc-500 hover:text-white transition-colors">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://youtube.com/@H4rshit-ai" target="_blank" rel="noreferrer" class="text-zinc-500 hover:text-white transition-colors">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.17 1 12 1 12s0 3.83.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.83 23 12 23 12s0-3.83-.46-5.58zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden z-50 text-white relative p-2" aria-label="Toggle Menu">
+                <svg id="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="transition-transform duration-300">
+                    <path d="M4 7h16M4 12h16M4 17h16"></path>
+                </svg>
+                <svg id="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="hidden">
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-black z-40 transition-transform duration-500 ease-in-out px-8 md:px-12 pt-28 pb-8 translate-x-full overflow-y-auto">
+        <div class="flex flex-col min-h-full">
+            <nav class="flex flex-col space-y-6 text-xl sm:text-2xl font-mono uppercase tracking-widest mt-4">
+                <a href="#" class="mobile-link text-white hover:text-zinc-400 transition-colors flex items-center">
+                    <span class="text-zinc-600 mr-4 text-sm">00</span> HOME
+                </a>
+                <a href="#intent" class="mobile-link text-zinc-400 hover:text-white transition-colors flex items-center">
+                    <span class="text-zinc-600 mr-4 text-sm">01</span> INTENT (ABOUT)
+                </a>
+                <a href="#portfolio" class="mobile-link text-zinc-400 hover:text-white transition-colors flex items-center">
+                    <span class="text-zinc-600 mr-4 text-sm">02</span> PROJECTS INDEX
+                </a>
+                <a href="#expertise" class="mobile-link text-zinc-400 hover:text-white transition-colors flex items-center">
+                    <span class="text-zinc-600 mr-4 text-sm">03</span> EXPERTISE MATRIX
+                </a>
+                <a href="#telemetry" class="mobile-link text-zinc-400 hover:text-white transition-colors flex items-center">
+                    <span class="text-zinc-600 mr-4 text-sm">04</span> SYSTEM TELEMETRY
+                </a>
+                <a href="#contact" class="mobile-link text-zinc-400 hover:text-white transition-colors flex items-center">
+                    <span class="text-zinc-600 mr-4 text-sm">05</span> SECURE CONTACT
+                </a>
+            </nav>
+            
+            <div class="mt-auto pt-12 pb-4 shrink-0">
+                <div class="flex space-x-6 border-t border-zinc-900 pt-8">
+                    <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="text-white p-3 border border-zinc-800 rounded-none bg-zinc-950 hover:bg-white hover:text-black transition-colors">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com/@H4rshit-ai" target="_blank" rel="noreferrer" class="text-white p-3 border border-zinc-800 rounded-none bg-zinc-950 hover:bg-white hover:text-black transition-colors">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.17 1 12 1 12s0 3.83.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.83 23 12 23 12s0-3.83-.46-5.58zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="pt-32 pb-24 max-w-7xl mx-auto px-6 md:px-12">
+        
+        <section class="py-20 md:py-32 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-7 flex flex-col justify-center">
+                <div class="font-mono text-zinc-500 text-xs mb-6 uppercase tracking-widest flex items-center">
+                    <span class="w-8 h-px bg-zinc-700 mr-4"></span>
+                    // DEVELOPER & DESIGNER
+                </div>
+                
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tighter text-white leading-[0.85] mb-8">
+                    HARSHIT<br />RANJAN.
+                </h1>
+                
+                <p class="text-lg md:text-xl text-zinc-400 max-w-xl leading-relaxed mb-10 font-light">
+                    Crafting high-performance digital environments. I specialize in backend infrastructure, game server deployments, community automations, and engineering stripped-down, beautiful user interfaces.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 font-mono text-sm uppercase tracking-wider">
+                    <a href="#contact" class="px-8 py-4 bg-white text-black font-bold flex items-center justify-center gap-2 hover:bg-zinc-200 transition-colors">
+                        Initiate Contact 
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                    <a href="#portfolio" class="px-8 py-4 border border-zinc-800 text-white flex items-center justify-center hover:border-zinc-500 transition-colors">
+                        Explore Work
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative group">
+                <div class="relative aspect-[4/5] w-full border border-zinc-800 p-2 bg-zinc-950 overflow-hidden">
+                    <div class="w-full h-full bg-zinc-900 relative overflow-hidden">
+                        
+                        <img 
+                            id="hero-image"
+                            src="1000259442.jpg" 
+                            alt="Harshit Ranjan Avatar" 
+                            class="w-full h-full object-cover grayscale contrast-125 hover:scale-105 transition-transform duration-700 ease-out"
+                        />
+                        
+                        <div id="image-fallback" class="hidden absolute inset-0 flex-col items-center justify-center text-zinc-600 bg-zinc-950 border border-zinc-900">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="mb-4 opacity-50">
+                                <path d="M4 7h16M4 12h16M4 17h16"></path>
+                            </svg>
+                            <span class="font-mono text-xs uppercase tracking-widest">// IMAGE_UNAVAILABLE</span>
+                            <span class="font-mono text-[10px] mt-2 opacity-50">Fallback Render Active</span>
+                        </div>
+
+                        <div class="absolute inset-0 bg-black/10 mix-blend-overlay pointer-events-none"></div>
+                    </div>
+                </div>
+                
+                <div class="mt-4 font-mono text-[10px] sm:text-xs text-zinc-500 flex justify-between border-t border-zinc-900 pt-4">
+                    <span>SIGNATURE: WL2SAA</span>
+                    <span class="text-right">WORK FOCUS: INFRASTRUCTURE / AUTOMATION</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="intent" class="py-24 border-t border-zinc-900">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-4">
+                    <h2 class="font-mono text-zinc-500 text-sm tracking-widest sticky top-32">01 / INTENT</h2>
+                </div>
+                <div class="md:col-span-8 text-xl md:text-3xl text-zinc-200 font-light leading-snug space-y-8">
+                    <p>
+                        My intent is absolute leverage through code. I strip away complexity to reveal high-performance systems, robust hosting environments, and optimized workflows.
+                    </p>
+                    <p class="text-zinc-500 text-lg md:text-xl">
+                        I believe in building software that doesn't just function, but operates with aggressive efficiency. Every line of code, every pixel on the screen, and every server deployed must serve a distinct purpose. No noise, just signal.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-24 border-t border-zinc-900">
+            <div class="mb-16">
+                <h2 class="font-mono text-zinc-500 text-sm tracking-widest">02 / PORTFOLIO INDEX</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="md:col-span-2 group block bg-zinc-950/50 border border-zinc-900 p-8 md:p-12 hover:border-zinc-700 transition-colors relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300 text-white">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col h-full justify-between">
+                        <div>
+                            <p class="font-mono text-zinc-500 text-xs mb-4 uppercase tracking-widest">// SOFTWARE DESIGN COMPANY / ACTIVE OPERATION</p>
+                            <h3 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight group-hover:text-zinc-300 transition-colors">Mistware</h3>
+                            <p class="text-zinc-400 max-w-2xl text-lg mb-12 font-light">
+                                A software company providing automated workflows, custom AI agents, calling agents, and high-performance websites engineered for scale and speed.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs text-zinc-400 uppercase tracking-widest">
+                            <span class="px-3 py-1 border border-zinc-800 bg-black">Workflows</span>
+                            <span class="px-3 py-1 border border-zinc-800 bg-black">AI Agents</span>
+                            <span class="px-3 py-1 border border-zinc-800 bg-black">Calling Agents</span>
+                            <span class="px-3 py-1 border border-zinc-800 bg-black">Custom Sites</span>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="group block bg-zinc-950/30 border border-zinc-900 p-8 hover:border-zinc-700 transition-colors relative">
+                     <div>
+                        <p class="font-mono text-zinc-500 text-xs mb-4 uppercase tracking-widest">[ Application ] / AI Wallpaper Gen</p>
+                        <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">VibeGen</h3>
+                        <p class="text-zinc-400 text-base mb-10 font-light">
+                            A design platform allowing users to generate high-resolution wallpapers for phones and laptops using tuned AI image models.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-[10px] text-zinc-500 uppercase tracking-widest mt-auto">
+                        <span class="px-2 py-1 border border-zinc-800">AI</span>
+                        <span class="px-2 py-1 border border-zinc-800">REACT</span>
+                        <span class="px-2 py-1 border border-zinc-800">IMAGEN-4</span>
+                    </div>
+                </div>
+
+                <div class="group block bg-zinc-950/30 border border-zinc-900 p-8 hover:border-zinc-700 transition-colors relative">
+                     <div>
+                        <p class="font-mono text-zinc-500 text-xs mb-4 uppercase tracking-widest">[ Indexing Portal ] / Download Engine</p>
+                        <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">wl2sa.cdn</h3>
+                        <p class="text-zinc-400 text-base mb-10 font-light">
+                            An optimized portal and resources repository indexing public assets, setup executables, and custom code packages for isolated environments.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-[10px] text-zinc-500 uppercase tracking-widest mt-auto">
+                        <span class="px-2 py-1 border border-zinc-800">CDN</span>
+                        <span class="px-2 py-1 border border-zinc-800">STORAGE</span>
+                        <span class="px-2 py-1 border border-zinc-800">NODEJS</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="expertise" class="py-24 border-t border-zinc-900">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-4">
+                    <h2 class="font-mono text-zinc-500 text-sm tracking-widest sticky top-32">03 / EXPERTISE</h2>
+                </div>
+                
+                <div class="md:col-span-8 space-y-16">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 border-b border-zinc-900 pb-16">
+                        <div>
+                            <h3 class="text-white font-mono text-sm uppercase tracking-widest mb-6 flex items-center">
+                                <span class="w-4 h-4 bg-white inline-block mr-3"></span>
+                                Community Architect
+                            </h3>
+                            <p class="text-zinc-400 font-light leading-relaxed">
+                                Expert Discord Server & Bot Developer. Architecting highly-engaged community spaces, enforcing permission structures, and programming custom automation bots.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-mono text-sm uppercase tracking-widest mb-6 flex items-center">
+                                <span class="w-4 h-4 bg-zinc-700 inline-block mr-3"></span>
+                                Infrastructure & Hosting
+                            </h3>
+                            <p class="text-zinc-400 font-light leading-relaxed">
+                                Specialized in making custom Hostings and Minecraft Server Development. Provisioning servers, configuring Linux/Ubuntu environments, and deploying robust backend infrastructure.
+                            </p>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <h3 class="text-white font-mono text-sm uppercase tracking-widest mb-6 flex items-center">
+                                <span class="w-4 h-4 bg-zinc-500 inline-block mr-3"></span>
+                                AI & Core Development
+                            </h3>
+                            <p class="text-zinc-400 font-light leading-relaxed max-w-2xl">
+                                Engineering intelligence pipelines utilizing Google Deepmind, Gemini, n8n, and Retell AI alongside traditional full-stack environments. Writing Prompt Engineering logic to maximize model output accuracy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="font-mono text-zinc-600 text-xs uppercase tracking-widest mb-6">// FULL_STACK_INDEX_ARRAY</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">HTML5</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">CSS3</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">JavaScript</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Python</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">MySQL</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Supabase</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Google Cloud</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Google OAuth</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Google AI / Deepmind</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Replit</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Gemini</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">n8n</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Retell AI</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Linux</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Ubuntu</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Firebase</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Tailwind CSS</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">VS Code</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">GitHub</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Android Studio</span>
+                            <span class="font-mono text-sm px-4 py-2 bg-zinc-950 border border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-500 transition-colors cursor-default">Prompt Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="telemetry" class="py-24 border-t border-zinc-900 bg-zinc-950/20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-4">
+                    <h2 class="font-mono text-zinc-500 text-sm tracking-widest sticky top-32">04 / TELEMETRY</h2>
+                </div>
+                
+                <div class="md:col-span-8">
+                    <div class="border border-zinc-800 bg-black p-6 sm:p-8 font-mono text-sm">
+                        <div class="flex items-center gap-3 text-zinc-500 mb-8 border-b border-zinc-900 pb-4">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                                <polyline points="4 17 10 11 4 5"></polyline>
+                                <line x1="12" y1="19" x2="20" y2="19"></line>
+                            </svg>
+                            <span>SYSTEM.LOG / PERSONAL_DATA_DUMP</span>
+                        </div>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 group">
+                                <span class="text-zinc-600 shrink-0">[01]</span>
+                                <span class="text-zinc-300 group-hover:text-white transition-colors">Gamer at heart. High-performance logic applies to both code and play.</span>
+                            </li>
+                            <li class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 group">
+                                <span class="text-zinc-600 shrink-0">[02]</span>
+                                <span class="text-zinc-300 group-hover:text-white transition-colors">Execution speed verified: 45 WPM typing rate.</span>
+                            </li>
+                            <li class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 group">
+                                <span class="text-zinc-600 shrink-0">[03]</span>
+                                <span class="text-zinc-300 group-hover:text-white transition-colors">100% Self-Taught. Built entirely on autonomous learning.</span>
+                            </li>
+                            <li class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 group">
+                                <span class="text-zinc-600 shrink-0">[04]</span>
+                                <span class="text-zinc-300 group-hover:text-white transition-colors">Hardware-Lover. Deep appreciation for the metal beneath the software.</span>
+                            </li>
+                            <li class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 group">
+                                <span class="text-zinc-600 shrink-0">[05]</span>
+                                <span class="text-zinc-300 group-hover:text-white transition-colors">Tech-Savvy across diverse ecosystems.</span>
+                            </li>
+    
+        <section id="contact" class="py-24 border-t border-zinc-900">
+             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-4">
+                    <h2 class="font-mono text-zinc-500 text-sm tracking-widest sticky top-32">05 / INQUIRY TRANSCEIVER</h2>
+                </div>
+                
+                <div class="md:col-span-8">
+                    <div id="form-container">
+                        <form id="contact-form" action="https://formspree.io/f/xwvdjded" method="POST" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex flex-col">
+                                    <label for="name" class="font-mono text-xs text-zinc-500 mb-2 uppercase tracking-widest">Identifier</label>
+                                    <input type="text" id="name" name="name" required class="bg-zinc-950 border border-zinc-800 p-4 text-white font-mono text-sm focus:outline-none focus:border-white transition-colors" placeholder="NAME / ALIAS">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label for="email" class="font-mono text-xs text-zinc-500 mb-2 uppercase tracking-widest">Return Channel</label>
+                                    <input type="email" id="email" name="email" required class="bg-zinc-950 border border-zinc-800 p-4 text-white font-mono text-sm focus:outline-none focus:border-white transition-colors" placeholder="EMAIL ADDRESS">
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="message" class="font-mono text-xs text-zinc-500 mb-2 uppercase tracking-widest">Payload</label>
+                                <textarea id="message" name="message" rows="5" required class="bg-zinc-950 border border-zinc-800 p-4 text-white font-mono text-sm focus:outline-none focus:border-white transition-colors resize-none" placeholder="ENTER TRANSMISSION DATA..."></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="w-full md:w-auto px-8 py-4 bg-white text-black font-mono font-bold text-sm uppercase tracking-widest hover:bg-zinc-200 transition-colors">
+                                Transmit
+                            </button>
+                            <p id="form-error" class="hidden text-red-500 font-mono text-xs uppercase tracking-widest mt-2">Error: Transmission Failed. Please retry.</p>
+                        </form>
+                    </div>
+
+                    <div id="success-container" class="hidden bg-zinc-950 border border-zinc-800 p-12 text-center flex-col items-center justify-center min-h-[300px]">
+                        <div class="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center text-white mb-6 mx-auto">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                                <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-mono text-white text-xl uppercase tracking-widest mb-2">// TRANSMISSION COMPLETED</h3>
+                        <p class="text-zinc-500 font-mono text-sm">Data received safely via Formspree. Awaiting protocol engagement.</p>
+                    </div>
+
+                    <div class="mt-16 pt-16 border-t border-zinc-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+                        <div>
+                            <p class="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-2">Social Coordinates</p>
+                            <div class="flex space-x-6">
+                                <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="text-white hover:text-zinc-400 transition-colors flex items-center gap-2 text-sm font-mono">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GITHUB
+                                </a>
+                                <a href="https://youtube.com/@H4rshit-ai" target="_blank" rel="noreferrer" class="text-white hover:text-zinc-400 transition-colors flex items-center gap-2 text-sm font-mono">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.17 1 12 1 12s0 3.83.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.83 23 12 23 12s0-3.83-.46-5.58zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"></path>
+                                    </svg>
+                                    YOUTUBE
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                             <p class="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-2">Status</p>
+                             <p class="font-mono text-sm text-green-500 flex items-center gap-2">
+                                 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                                 ONLINE / ACCEPTING INQUIRIES
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-zinc-900 py-12">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div id="footer-year" class="font-mono text-zinc-600 text-xs uppercase tracking-widest"></div>
+            <div class="flex items-center space-x-6 font-mono text-xs text-zinc-600 uppercase tracking-widest">
+                <a href="https://GitHub.com/WL2SAA" class="hover:text-white transition-colors">Github</a>
+                <span>//</span>
+                <a href="https://youtube.com/@H4rshit-ai" class="hover:text-white transition-colors">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Header Blur on Scroll
+        const header = document.getElementById('main-header');
+        let isMenuOpen = false;
+
+        function updateHeaderScrollState() {
+            if (isMenuOpen) return; // Menu open state handles its own styling
+            
+            if (window.scrollY > 50) {
+                header.classList.remove('bg-transparent', 'border-transparent');
+                header.classList.add('bg-black/80', 'backdrop-blur-md', 'border-zinc-900');
+                header.style.paddingTop = '1rem';
+                header.style.paddingBottom = '1rem';
+            } else {
+                header.classList.add('bg-transparent', 'border-transparent');
+                header.classList.remove('bg-black/80', 'backdrop-blur-md', 'border-zinc-900', 'bg-black');
+                header.style.paddingTop = '1.5rem';
+                header.style.paddingBottom = '1.5rem';
+            }
+        }
+        
+        window.addEventListener('scroll', updateHeaderScrollState);
+
+        // 2. Hamburger Menu Toggle Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconClose = document.getElementById('icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                // Open menu
+                mobileMenu.classList.remove('translate-x-full');
+                mobileMenu.classList.add('translate-x-0');
+                iconMenu.classList.add('hidden');
+                iconClose.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; 
+                
+                // Force solid background on header, strip blur so it doesn't cause clipping
+                header.classList.remove('bg-transparent', 'bg-black/80', 'backdrop-blur-md');
+                header.classList.add('bg-black');
+            } else {
+                // Close menu
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+                iconMenu.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+                document.body.style.overflow = 'auto'; 
+                
+                // Recalculate header state based on scroll
+                header.classList.remove('bg-black');
+                updateHeaderScrollState();
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (isMenuOpen) toggleMenu();
+            });
+        });
+
+        // 3. Image Fallback Handling
+        const heroImage = document.getElementById('hero-image');
+        const imageFallback = document.getElementById('image-fallback');
+        
+        heroImage.addEventListener('error', function() {
+            heroImage.style.display = 'none';
+            imageFallback.classList.remove('hidden');
+            imageFallback.classList.add('flex');
+        });
+
+        // 4. Formspree Form Submission (AJAX)
+        const contactForm = document.getElementById('contact-form');
+        const formContainer = document.getElementById('form-container');
+        const successContainer = document.getElementById('success-container');
+        const submitBtn = document.getElementById('submit-btn');
+        const formError = document.getElementById('form-error');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); 
+            
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.innerText = 'TRANSMITTING...';
+            submitBtn.disabled = true;
+            formError.classList.add('hidden');
+
+            const data = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    formContainer.style.display = 'none';
+                    successContainer.classList.remove('hidden');
+                    successContainer.classList.add('flex');
+                    contactForm.reset(); 
+                } else {
+                    formError.classList.remove('hidden');
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                formError.classList.remove('hidden');
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // 5. Dynamic Footer Year
+        document.getElementById('footer-year').innerText = `© ${new Date().getFullYear()} HARSHIT RANJAN / WL2SAA`;
+    </script>
+</body>
+</html>
