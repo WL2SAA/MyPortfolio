@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshit Ranjan | Developer</title>
+    <title>Harshit Ranjan | Developer & Designer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom scrollbar to match the minimalist theme */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -23,12 +22,14 @@
 </head>
 <body class="min-h-screen bg-black text-zinc-300 font-sans selection:bg-white selection:text-black overflow-x-hidden">
 
+    <!-- 1. NAVIGATION HEADER -->
     <header id="main-header" class="fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent bg-transparent py-6">
         <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
             <div class="flex items-center space-x-2 z-50 relative">
                 <a href="#" class="font-mono font-bold text-white tracking-widest uppercase">HR // HARSHIT RANJAN</a>
             </div>
 
+            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center space-x-8 font-mono text-xs uppercase tracking-widest">
                 <a href="#intent" class="hover:text-white transition-colors">About</a>
                 <a href="#portfolio" class="hover:text-white transition-colors">Projects</a>
@@ -37,19 +38,20 @@
                 <a href="#contact" class="hover:text-white transition-colors">Contact</a>
             </nav>
 
+            <!-- Desktop Socials -->
             <div class="hidden md:flex items-center space-x-4">
                 <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="text-zinc-500 hover:text-white transition-colors">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
                 <a href="https://youtube.com/@H4rshit-ai" target="_blank" rel="noreferrer" class="text-zinc-500 hover:text-white transition-colors">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
-                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.17 1 12 1 12s0 3.83.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.83 23 12 23 12s0-3.83-.46-5.58zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"></path>
-                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.17 1 12 1 12s0 3.83.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.83 23 12 23 12s0-3.83-.46-5.58zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"></path></svg>
+                </a>
+                <a href="https://www.instagram.com/wl2s_a?igsh=MXF3djcycWIxb2RyaQ==" target="_blank" rel="noreferrer" class="text-zinc-500 hover:text-white transition-colors">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
             </div>
 
+            <!-- Mobile Menu Toggle Button -->
             <button id="menu-btn" class="md:hidden z-50 text-white relative p-2" aria-label="Toggle Menu">
                 <svg id="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="transition-transform duration-300">
                     <path d="M4 7h16M4 12h16M4 17h16"></path>
@@ -61,6 +63,7 @@
         </div>
     </header>
 
+    <!-- 2. MOBILE NAVIGATION DRAWER -->
     <div id="mobile-menu" class="fixed inset-0 bg-black z-40 transition-transform duration-500 ease-in-out px-8 md:px-12 pt-28 pb-8 translate-x-full overflow-y-auto">
         <div class="flex flex-col min-h-full">
             <nav class="flex flex-col space-y-6 text-xl sm:text-2xl font-mono uppercase tracking-widest mt-4">
@@ -87,21 +90,21 @@
             <div class="mt-auto pt-12 pb-4 shrink-0">
                 <div class="flex space-x-6 border-t border-zinc-900 pt-8">
                     <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="text-white p-3 border border-zinc-800 rounded-none bg-zinc-950 hover:bg-white hover:text-black transition-colors">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                     </a>
                     <a href="https://youtube.com/@H4rshit-ai" target="_blank" rel="noreferrer" class="text-white p-3 border border-zinc-800 rounded-none bg-zinc-950 hover:bg-white hover:text-black transition-colors">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
-                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.17 1 12 1 12s0 3.83.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.83 23 12 23 12s0-3.83-.46-5.58zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"></path>
-                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.17 1 12 1 12s0 3.83.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.83 23 12 23 12s0-3.83-.46-5.58zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"></path></svg>
+                    </a>
+                    <a href="https://www.instagram.com/wl2s_a?igsh=MXF3djcycWIxb2RyaQ==" target="_blank" rel="noreferrer" class="text-white p-3 border border-zinc-800 rounded-none bg-zinc-950 hover:bg-white hover:text-black transition-colors">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <main class="pt-32 pb-24 max-w-7xl mx-auto px-6 md:px-12">
+        <main class="pt-32 pb-24 max-w-7xl mx-auto px-6 md:px-12">
         
+        <!-- 3. HERO LAYOUT -->
         <section class="py-20 md:py-32 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div class="lg:col-span-7 flex flex-col justify-center">
                 <div class="font-mono text-zinc-500 text-xs mb-6 uppercase tracking-widest flex items-center">
@@ -131,28 +134,20 @@
             </div>
 
             <div class="lg:col-span-5 relative group">
+                <!-- Avatar Frame -->
                 <div class="relative aspect-[4/5] w-full border border-zinc-800 p-2 bg-zinc-950 overflow-hidden">
                     <div class="w-full h-full bg-zinc-900 relative overflow-hidden">
-                        
-                        <img 
-                            id="hero-image"
-                            src="profile.jpg" 
-                            alt="Harshit Ranjan Avatar" 
-                            class="w-full h-full object-cover grayscale contrast-125 hover:scale-105 transition-transform duration-700 ease-out"
-                        />
-                        
+                        <img id="hero-image" src="1000259442.jpg" alt="Harshit Ranjan Avatar" class="w-full h-full object-cover grayscale contrast-125 hover:scale-105 transition-transform duration-700 ease-out"/>
+                        <!-- Fallback -->
                         <div id="image-fallback" class="hidden absolute inset-0 flex-col items-center justify-center text-zinc-600 bg-zinc-950 border border-zinc-900">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="mb-4 opacity-50">
-                                <path d="M4 7h16M4 12h16M4 17h16"></path>
-                            </svg>
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="mb-4 opacity-50"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
                             <span class="font-mono text-xs uppercase tracking-widest">// IMAGE_UNAVAILABLE</span>
-                            <span class="font-mono text-[10px] mt-2 opacity-50">Fallback Render Active</span>
                         </div>
-
                         <div class="absolute inset-0 bg-black/10 mix-blend-overlay pointer-events-none"></div>
                     </div>
                 </div>
                 
+                <!-- Technical Index -->
                 <div class="mt-4 font-mono text-[10px] sm:text-xs text-zinc-500 flex justify-between border-t border-zinc-900 pt-4">
                     <span>SIGNATURE: WL2SAA</span>
                     <span class="text-right">WORK FOCUS: INFRASTRUCTURE / AUTOMATION</span>
@@ -160,6 +155,7 @@
             </div>
         </section>
 
+        <!-- 4. PURPOSE / PHILOSOPHY SECTION -->
         <section id="intent" class="py-24 border-t border-zinc-900">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
                 <div class="md:col-span-4">
@@ -175,7 +171,7 @@
                 </div>
             </div>
         </section>
-
+                <!-- 5. PROJECT SHOWCASE GRID -->
         <section id="portfolio" class="py-24 border-t border-zinc-900">
             <div class="mb-16">
                 <h2 class="font-mono text-zinc-500 text-sm tracking-widest">02 / PORTFOLIO INDEX</h2>
@@ -183,11 +179,10 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
-                <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="md:col-span-2 group block bg-zinc-950/50 border border-zinc-900 p-8 md:p-12 hover:border-zinc-700 transition-colors relative overflow-hidden">
+                <!-- Project 1: Featured -->
+                <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="md:col-span-2 group block bg-zinc-950/50 border border-zinc-900 p-8 md:p-12 hover:border-zinc-700 transition-colors relative overflow-hidden cursor-pointer">
                     <div class="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300 text-white">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path>
-                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path></svg>
                     </div>
                     <div class="flex flex-col h-full justify-between">
                         <div>
@@ -206,7 +201,24 @@
                     </div>
                 </a>
 
-                <div class="group block bg-zinc-950/30 border border-zinc-900 p-8 hover:border-zinc-700 transition-colors relative">
+                <!-- Project 2: Hostmgr (Grid Half) -->
+                <a href="https://github.com/WL2SAA/hostmgr" target="_blank" rel="noreferrer" class="group block bg-zinc-950/30 border border-zinc-900 p-8 hover:border-zinc-700 transition-colors relative cursor-pointer">
+                     <div>
+                        <p class="font-mono text-zinc-500 text-xs mb-4 uppercase tracking-widest">[ Hosting Tool ] / Infrastructure</p>
+                        <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">Hostmgr</h3>
+                        <p class="text-zinc-400 text-base mb-10 font-light">
+                            An all-in-one deployment tool that helps developers build their hostings fast without running and setting up complex individual commands.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-[10px] text-zinc-500 uppercase tracking-widest mt-auto">
+                        <span class="px-2 py-1 border border-zinc-800">AUTOMATION</span>
+                        <span class="px-2 py-1 border border-zinc-800">LINUX</span>
+                        <span class="px-2 py-1 border border-zinc-800">HOSTING</span>
+                    </div>
+                </a>
+
+                <!-- Project 3: VibeGen (Grid Half) -->
+                <a href="https://github.com/WL2SAA/hostmgr" target="_blank" rel="noreferrer" class="group block bg-zinc-950/30 border border-zinc-900 p-8 hover:border-zinc-700 transition-colors relative cursor-pointer">
                      <div>
                         <p class="font-mono text-zinc-500 text-xs mb-4 uppercase tracking-widest">[ Application ] / AI Wallpaper Gen</p>
                         <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">VibeGen</h3>
@@ -219,26 +231,31 @@
                         <span class="px-2 py-1 border border-zinc-800">REACT</span>
                         <span class="px-2 py-1 border border-zinc-800">IMAGEN-4</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="group block bg-zinc-950/30 border border-zinc-900 p-8 hover:border-zinc-700 transition-colors relative">
+                <!-- Project 4: Neon Dash (Full Width) -->
+                <a href="https://neondash-one.vercel.app/index.html" target="_blank" rel="noreferrer" class="md:col-span-2 group block bg-zinc-950/50 border border-zinc-900 p-8 hover:border-zinc-700 transition-colors relative cursor-pointer overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-300 text-white">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path></svg>
+                    </div>
                      <div>
-                        <p class="font-mono text-zinc-500 text-xs mb-4 uppercase tracking-widest">[ Indexing Portal ] / Download Engine</p>
-                        <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">wl2sa.cdn</h3>
-                        <p class="text-zinc-400 text-base mb-10 font-light">
-                            An optimized portal and resources repository indexing public assets, setup executables, and custom code packages for isolated environments.
+                        <p class="font-mono text-zinc-500 text-xs mb-4 uppercase tracking-widest">[ Game ] / Web Application</p>
+                        <h3 class="text-3xl font-bold text-white mb-4 tracking-tight">Neon Dash</h3>
+                        <p class="text-zinc-400 max-w-2xl text-base mb-10 font-light">
+                            A game made in mind to mix modern aesthetics with classic gameplay. Engineered to be completely ad-free and open source.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 font-mono text-[10px] text-zinc-500 uppercase tracking-widest mt-auto">
-                        <span class="px-2 py-1 border border-zinc-800">CDN</span>
-                        <span class="px-2 py-1 border border-zinc-800">STORAGE</span>
-                        <span class="px-2 py-1 border border-zinc-800">NODEJS</span>
+                        <span class="px-2 py-1 border border-zinc-800">GAME DEV</span>
+                        <span class="px-2 py-1 border border-zinc-800">JAVASCRIPT</span>
+                        <span class="px-2 py-1 border border-zinc-800">OPEN SOURCE</span>
                     </div>
-                </div>
+                </a>
 
             </div>
         </section>
 
+        <!-- 6. EXPERTISE MATRIX -->
         <section id="expertise" class="py-24 border-t border-zinc-900">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
                 <div class="md:col-span-4">
@@ -276,6 +293,7 @@
                         </div>
                     </div>
 
+                    <!-- Flat Index Array -->
                     <div>
                         <p class="font-mono text-zinc-600 text-xs uppercase tracking-widest mb-6">// FULL_STACK_INDEX_ARRAY</p>
                         <div class="flex flex-wrap gap-3">
@@ -308,7 +326,7 @@
                 </div>
             </div>
         </section>
-
+                <!-- 7. TELEMETRY / FUN FACTS -->
         <section id="telemetry" class="py-24 border-t border-zinc-900 bg-zinc-950/20">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
                 <div class="md:col-span-4">
@@ -346,7 +364,26 @@
                                 <span class="text-zinc-600 shrink-0">[05]</span>
                                 <span class="text-zinc-300 group-hover:text-white transition-colors">Tech-Savvy across diverse ecosystems.</span>
                             </li>
-    
+                            <li class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 group">
+                                <span class="text-zinc-600 shrink-0">[06]</span>
+                                <span class="text-zinc-300 group-hover:text-white transition-colors">Audiophile. I run on music and rhythm.</span>
+                            </li>
+                            <li class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 group">
+                                <span class="text-zinc-600 shrink-0">[07]</span>
+                                <span class="text-zinc-300 group-hover:text-white transition-colors">Minimalist. I strip away the noise to find the signal.</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-8 pt-4 border-t border-zinc-900 flex items-center gap-2 text-zinc-600 text-xs">
+                            <span class="w-2 h-2 bg-zinc-600 block animate-pulse"></span>
+                            END_OF_FILE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. MINIMALIST CONTACT TRANSCEIVER -->
         <section id="contact" class="py-24 border-t border-zinc-900">
              <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
                 <div class="md:col-span-4">
@@ -354,7 +391,9 @@
                 </div>
                 
                 <div class="md:col-span-8">
+                    <!-- Form Container -->
                     <div id="form-container">
+                        <!-- Formspree Integration Form -->
                         <form id="contact-form" action="https://formspree.io/f/xwvdjded" method="POST" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="flex flex-col">
@@ -377,6 +416,7 @@
                         </form>
                     </div>
 
+                    <!-- Success State Container -->
                     <div id="success-container" class="hidden bg-zinc-950 border border-zinc-800 p-12 text-center flex-col items-center justify-center min-h-[300px]">
                         <div class="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center text-white mb-6 mx-auto">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
@@ -390,22 +430,26 @@
                     <div class="mt-16 pt-16 border-t border-zinc-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                         <div>
                             <p class="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-2">Social Coordinates</p>
-                            <div class="flex space-x-6">
+                            <div class="grid grid-cols-2 sm:flex sm:flex-row gap-6">
                                 <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="text-white hover:text-zinc-400 transition-colors flex items-center gap-2 text-sm font-mono">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                                     GITHUB
                                 </a>
-                                <a href="https://youtube.com/@H4rshit-ai" target="_blank" rel="noreferrer" class="text-white hover:text-zinc-400 transition-colors flex items-center gap-2 text-sm font-mono">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
-                                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.17 1 12 1 12s0 3.83.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.83 23 12 23 12s0-3.83-.46-5.58zM9.5 15.5v-7l6.5 3.5-6.5 3.5z"></path>
-                                    </svg>
-                                    YOUTUBE
+                                <a href="https://www.instagram.com/wl2s_a?igsh=MXF3djcycWIxb2RyaQ==" target="_blank" rel="noreferrer" class="text-white hover:text-zinc-400 transition-colors flex items-center gap-2 text-sm font-mono">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    INSTAGRAM
+                                </a>
+                                <div class="text-white flex items-center gap-2 text-sm font-mono cursor-default">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                                    @cubiexz
+                                </div>
+                                <a href="mailto:cubiexzz@gmail.com" class="text-white hover:text-zinc-400 transition-colors flex items-center gap-2 text-sm font-mono">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    EMAIL
                                 </a>
                             </div>
                         </div>
-                        <div class="text-right">
+                        <div class="text-right mt-6 sm:mt-0">
                              <p class="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-2">Status</p>
                              <p class="font-mono text-sm text-green-500 flex items-center gap-2">
                                  <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
@@ -418,24 +462,28 @@
         </section>
     </main>
 
+    <!-- 9. MONOCHROME FOOTER -->
     <footer class="border-t border-zinc-900 py-12">
         <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
             <div id="footer-year" class="font-mono text-zinc-600 text-xs uppercase tracking-widest"></div>
-            <div class="flex items-center space-x-6 font-mono text-xs text-zinc-600 uppercase tracking-widest">
-                <a href="https://GitHub.com/WL2SAA" class="hover:text-white transition-colors">Github</a>
+            <div class="flex flex-wrap items-center gap-6 font-mono text-xs text-zinc-600 uppercase tracking-widest">
+                <a href="https://GitHub.com/WL2SAA" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Github</a>
                 <span>//</span>
-                <a href="https://youtube.com/@H4rshit-ai" class="hover:text-white transition-colors">YouTube</a>
+                <a href="https://youtube.com/@H4rshit-ai" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">YouTube</a>
+                <span>//</span>
+                <a href="https://www.instagram.com/wl2s_a?igsh=MXF3djcycWIxb2RyaQ==" target="_blank" rel="noreferrer" class="hover:text-white transition-colors">Instagram</a>
             </div>
         </div>
     </footer>
 
+    <!-- JAVASCRIPT FOR INTERACTIVITY -->
     <script>
         // 1. Header Blur on Scroll
         const header = document.getElementById('main-header');
         let isMenuOpen = false;
 
         function updateHeaderScrollState() {
-            if (isMenuOpen) return; // Menu open state handles its own styling
+            if (isMenuOpen) return; 
             
             if (window.scrollY > 50) {
                 header.classList.remove('bg-transparent', 'border-transparent');
@@ -462,25 +510,21 @@
         function toggleMenu() {
             isMenuOpen = !isMenuOpen;
             if (isMenuOpen) {
-                // Open menu
                 mobileMenu.classList.remove('translate-x-full');
                 mobileMenu.classList.add('translate-x-0');
                 iconMenu.classList.add('hidden');
                 iconClose.classList.remove('hidden');
                 document.body.style.overflow = 'hidden'; 
                 
-                // Force solid background on header, strip blur so it doesn't cause clipping
                 header.classList.remove('bg-transparent', 'bg-black/80', 'backdrop-blur-md');
                 header.classList.add('bg-black');
             } else {
-                // Close menu
                 mobileMenu.classList.remove('translate-x-0');
                 mobileMenu.classList.add('translate-x-full');
                 iconMenu.classList.remove('hidden');
                 iconClose.classList.add('hidden');
                 document.body.style.overflow = 'auto'; 
                 
-                // Recalculate header state based on scroll
                 header.classList.remove('bg-black');
                 updateHeaderScrollState();
             }
