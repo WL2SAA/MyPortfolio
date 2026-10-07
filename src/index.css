@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  .dark {
+    /* Tenshi Kawaii Pure Cloud White & Blue Theme - ZERO BLACK ANYWHERE! */
+    --bg-app: #f6faff;
+    --bg-surface: #ffffff;
+    --bg-card: #ffffff;
+    --border-subtle: #bae6fd;
+    --border-strong: #38bdf8;
+    --text-main: #0369a1;
+    --text-sub: #0284c7;
+    --text-muted: #38bdf8;
+    --color-blue: #0284c7;
+    --color-lightblue: #38bdf8;
+    --color-babyblue: #7dd3fc;
+    --color-sky: #0ea5e9;
+    --color-aqua: #06b6d4;
+    --color-green: #10b981;
+  }
+
+  * {
+    border-color: #bae6fd;
+  }
+
+  body {
+    background-color: #f6faff;
+    color: #0369a1;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Tenshi Light Blue & Aqua Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f6faff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #7dd3fc;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+  }
+}
